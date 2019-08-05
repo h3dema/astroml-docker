@@ -12,7 +12,7 @@ FROM ubuntu:18.04 as base
 
 RUN apt-get -y update && apt-get -y upgrade
 
-RUN apt-get -y install build-essential git wget
+RUN apt-get -y install build-essential git wget apt-utils
 
 # need pip to install modules
 RUN apt-get -y install python-pip
@@ -34,7 +34,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 
 
 # need for many figures/graphs
-RUN apt-get -y install texlive-full
+# RUN apt-get -y install texlive-full
+RUN apt-get -y install texlive-latex-recommended texlive-latex-extra texlive-latex-base latex-cjk-common latex-cjk-all
 
 # install astroML
 RUN python -m pip install astroml
