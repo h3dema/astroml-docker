@@ -37,9 +37,12 @@ docker run -p 8888:8888 -v "$(pwd)":/root/local --net host -it h3dema/astroml
 ```
 
 To run the jupyter notebooks of the course, run the following commands
+to download the course files in root home directory.
 
 ```
-cd root/SPSAS2019
+cd root/local
+git clone https://github.com/dirac-institute/SPSAS2019.git
+cd SPSAS2019
 j
 ```
 

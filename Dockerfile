@@ -33,9 +33,6 @@ RUN python -m pip install astroml
 
 EXPOSE 8888
 
-# download the course files in root home directory
-RUN cd /root && git clone https://github.com/dirac-institute/SPSAS2019.git
-
 # directory in the container to map the PWD directory in the host computer
 RUN mkdir -p /root/local
 
