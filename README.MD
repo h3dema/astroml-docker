@@ -54,7 +54,7 @@ docker run -p 8888:8888 -v "$(pwd)":/root/local --net host -it h3dema/astroml
 ```
 
 When you run the previous command, another prompt is open -- now inside the container.
-You will be logged as root. The directory _/root/local_ inside the docker, is mapped (think of it as a symbolic link) to the directory (PWD) that you ran the __docker run__ command above.
+You will be logged as root. The directory _/root/local_, inside the docker, is mapped (think of it as a symbolic link) to the directory (PWD) that you ran the __docker run__ command above.
 To run the jupyter notebooks of the course, run the following commands to download the course files in root home directory.
 Notice that these lines will download the course to the directory in the host computer, accessible by the container.
 This is important because when you close the container, all data is lost.
@@ -73,6 +73,7 @@ You can copy and paste the URL in your host web browser, and it will connect to 
 
 `
 Or copy and paste one of these URLs:
+
         http://localhost:8888/?token=6cce160311ab5c41bbb70d61c525bf9fc685e166f67381ea
 `
 
