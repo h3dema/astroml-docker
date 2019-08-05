@@ -16,6 +16,7 @@ sudo usermod -aG docker $USER
 
 Then you havve to log out and log back in so that your group membership is re-evaluated.
 
+__For more information about to the installation, please refer to the [docker documentation](https://docs.docker.com/install/).__
 
 
 # Build the docker
@@ -23,10 +24,20 @@ Then you havve to log out and log back in so that your group membership is re-ev
 To use the container, you first need to build it.
 This process downloads and compiles all modules and packages necessary, and it can take some time.
 
-Cd to the directory where the dockerfile is, and type the following command:
+Cd to the directory where the dockerfile is, and type the one of the following blocks of command:
+
+1) cloning this repository
 
 ```
+git clone https://github.com/h3dema/astroml-docker.git
+cd astroml-docker
 docker build -t h3dema/astroml .
+```
+
+2) From GitHub
+
+```
+docker build github.com/h3dema/astroml-docker -t h3dema/astroml
 ```
 
 

@@ -39,3 +39,5 @@ RUN mkdir -p /root/local
 # create some alias
 # 1) just type "j" to run the jupyter notebook
 RUN echo "alias j=\"jupyter notebook --allow-root\"" >> /root/.bashrc
+
+WORKDIR /root/local
