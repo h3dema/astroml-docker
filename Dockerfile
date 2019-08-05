@@ -17,15 +17,16 @@ RUN apt-get -y install build-essential git wget
 # need pip to install modules
 RUN apt-get -y install python-pip
 
-# dependencies for some code in astroML
-RUN apt-get -y install gfortran-7
-RUN apt-get -y install texlive-latex-recommended
-
 # python modules
 RUN python -m pip install numpy scipy
 RUN python -m pip install matplotlib
 RUN python -m pip install sklearn
 RUN python -m pip install jupyter
+
+# dependencies for some code in astroML
+RUN apt-get -y install gfortran-7
+# need for many figures/graphs
+RUN apt-get -y install texlive-full
 
 # install astroML
 RUN python -m pip install astroml
@@ -40,4 +41,4 @@ RUN mkdir -p /root/local
 
 # create some alias
 # 1) just type "j" to run the jupyter notebook
-RUN echo "alias j=\"jupyter notebook\"" >> /root/.bashrc
+RUN echo "alias j=\"jupyter notebook --allow-root\"" >> /root/.bashrc

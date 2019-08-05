@@ -33,6 +33,19 @@ After the build you can run the container and run applications in it.
 
 
 ```
-docker run -p 8888:8888 -v "$(pwd)":/root/local -it h3dema/astroml
+docker run -p 8888:8888 -v "$(pwd)":/root/local --net host -it h3dema/astroml
 ```
 
+To run the jupyter notebooks of the course, run the following commands
+
+```
+cd root/SPSAS2019
+j
+```
+
+Then you can open in the host computer, the browser and type the command shown in a line similar to the lines below. You can copy and paste the URL in your host web browser, and it will connect to the environment inside the container.
+
+`
+Or copy and paste one of these URLs:
+        http://localhost:8888/?token=6cce160311ab5c41bbb70d61c525bf9fc685e166f67381ea
+`
