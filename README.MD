@@ -1,7 +1,7 @@
 # Introduction
 
-This repository creates a docker container that allows the students to follow the Lectures on "Big Data Sets in Astronomy" by Zeljko Ivezic at Sao Paulo School of Advanced Science on Learning from Data, July 31 - Aug 2, 2019
-
+This repository creates a docker container that allows the students to follow the Lectures on ["Big Data Sets in Astronomy"](https://github.com/dirac-institute/SPSAS2019) by Zeljko Ivezic at Sao Paulo School of Advanced Science on Learning from Data, July 31 - Aug 2, 2019.
+The container create can run the [astroML](https://github.com/astroML) programs.
 
 
 # Requisites
