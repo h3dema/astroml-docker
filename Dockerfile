@@ -25,6 +25,14 @@ RUN python -m pip install jupyter
 
 # dependencies for some code in astroML
 RUN apt-get -y install gfortran-7
+
+# tzdata
+export DEBIAN_FRONTEND=noninteractive
+ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+apt-get install -y tzdata
+dpkg-reconfigure --frontend noninteractive tzdata
+
+
 # need for many figures/graphs
 RUN apt-get -y install texlive-full
 
