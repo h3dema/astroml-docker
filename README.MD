@@ -33,6 +33,6 @@ After the build you can run the container and run applications in it.
 
 
 ```
-docker run -p 8888:8888 -w $(pwd):/root/local -i -t h3dema/astroml .
+docker run -p 8888:8888 -v "$(pwd)":/root/local -it h3dema/astroml
 ```
 
