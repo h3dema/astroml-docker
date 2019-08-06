@@ -77,4 +77,4 @@ You can copy and paste the URL in your host web browser, and it will connect to 
 >        http://localhost:8888/?token=6cce160311ab5c41bbb70d61c525bf9fc685e166f67381ea
 
 
-Notice that if you used the same commands as I, you just need to click in the link that shows in the container's console.
+Notice that if you use the same commands as I, you just need to click in the link that shows in the container's console.
